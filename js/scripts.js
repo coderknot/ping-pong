@@ -7,7 +7,10 @@ var pingPong = function(number) {
 
     var replaceNumber = "";
 
-    if(i % 3 === 0) {
+    if(i % 15 === 0) {
+      replaceNumber = "ping-pong";
+      numbers.push(replaceNumber);
+    } else if(i % 3 === 0) {
       replaceNumber = "ping";
       numbers.push(replaceNumber);
     } else if(i % 5 === 0) {
