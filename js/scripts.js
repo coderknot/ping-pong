@@ -4,11 +4,21 @@ var pingPong = function(number) {
   var numbers = [];
 
   for(var i = 1; i <= number; i++) {
-      numbers.push(i);
-  }
 
+    var replaceNumber = "";
+
+    if(i % 3 === 0) {
+      replaceNumber = "ping";
+      numbers.push(replaceNumber);
+    } else {
+      numbers.push(i);
+    }
+
+  }
+  
   console.log(numbers);
   return numbers;
+
 }
 
 // User Interface Logic
