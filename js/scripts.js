@@ -4,7 +4,7 @@ var pingPong = function(number) {
   var numbers = [];
 
   for(var i = 1; i <= number; i++) {
-    numbers.push(i);
+      numbers.push(i);
   }
 
   console.log(numbers);
