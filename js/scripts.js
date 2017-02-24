@@ -10,12 +10,15 @@ var pingPong = function(number) {
     if(i % 3 === 0) {
       replaceNumber = "ping";
       numbers.push(replaceNumber);
+    } else if(i % 5 === 0) {
+      replaceNumber = "pong";
+      numbers.push(replaceNumber);
     } else {
       numbers.push(i);
     }
 
   }
-  
+
   console.log(numbers);
   return numbers;
 
