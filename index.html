@@ -9,18 +9,46 @@
   </head>
   <body>
     <div class="container">
-      <form id="ping-pong">
-        <div class="form-group">
-          <label for="number">Enter a number:</label>
-          <input id="number" type="text">
+      <div class="row">
+        <div id="">
+          <div class="col-md-6">
+            <div class="well" id="heading">
+              <div class="jumbotron">
+                <h1>Ping Pong</h1>
+                <p>a numbers game!</p>
+              </div>
+              <p>
+                This application counts to a number, replacing certain numbers with specific words.
+              </p>
+              <form id="ping-pong">
+                <div class="form-group">
+                  <input id="number" type="text" placeholder="Enter a number">
+                </div>
+                <button type="submit" class="btn">Ping Pong!</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Ping Pong Numbers:</h2>
+              </div>
+              <div class="panel-body">
+                <div id="numbers-hidden">
+                  <p>
+                    <strong>Please enter a number to see the count!</strong>
+                </div>
+                <div id="numbers-error">
+                  <p>ERROR: Please enter a number!</p>
+                </div>
+                <div id="numbers-showing">
+                  <ul id="numbersList">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <button type="submit" class="btn">Ping Pong!</button>
-      </form>
-
-      <div id="output">
-        <ul id="numbersList">
-        </ul>
       </div>
     </div>
   </body>
