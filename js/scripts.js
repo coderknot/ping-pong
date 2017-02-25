@@ -31,17 +31,17 @@ $(document).ready(function() {
     $("#numbers-error").hide();
     $("#numbers-hidden").show();
 
-    var number = parseInt($("#number").val());
+    var number = parseInt($("#numberInput").val());
 
     if(jQuery.type(number === "number") && ((number !== number) === false)) {
+      $("#numbers-hidden").hide();
+      $("#numbers-showing").show();
+
       var numbers = pingPong(number);
 
       for(var i = 0; i < numbers.length; i++) {
-        $("#numbersList").append("<li>" + numbers[i] + "</li>");
+        $("#numbersList").append("<li>" + numbers[i] + "</li>")
       }
-
-      $("#numbers-hidden").hide();
-      $("#numbers-showing").show();
     } else {
       $("#numbers-hidden").hide();
       $("#numbers-error").show();

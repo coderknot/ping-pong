@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <div class="row">
-        <div id="">
+        <div id="application">
           <div class="col-md-6">
             <div class="well" id="heading">
               <div class="jumbotron">
@@ -18,11 +18,11 @@
                 <p>a numbers game!</p>
               </div>
               <p>
-                This application counts to a number, replacing certain numbers with specific words.
+                This application counts to a number, replacing certain numbers with specific words. Which words? Type in a number to find out!
               </p>
-              <form id="ping-pong">
+              <form class="form-inline" id="ping-pong">
                 <div class="form-group">
-                  <input id="number" type="text" placeholder="Enter a number">
+                  <input id="numberInput" type="text" placeholder="Enter a number">
                 </div>
                 <button type="submit" class="btn">Ping Pong!</button>
               </form>
@@ -31,15 +31,14 @@
           <div class="col-md-4">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h2 class="panel-title">Ping Pong Numbers:</h2>
+                <h2 class="panel-title">Numbers:</h2>
               </div>
               <div class="panel-body">
                 <div id="numbers-hidden">
-                  <p>
-                    <strong>Please enter a number to see the count!</strong>
+                  <p><strong>Please enter a number to see the count!</strong></p>
                 </div>
                 <div id="numbers-error">
-                  <p>ERROR: Please enter a number!</p>
+                  <p><strong>ERROR: Please enter a number!</strong></p>
                 </div>
                 <div id="numbers-showing">
                   <ul id="numbersList">

@@ -1,3 +1,70 @@
 #numbers-showing, #numbers-error {
   display: none;
 }
+
+#heading {
+  border-color: #777778;
+}
+
+#heading .jumbotron {
+  margin-bottom: 20px;
+  padding: 0px;
+  background-color: inherit;
+}
+
+#heading .jumbotron h1 {
+  color: #9A3016;
+  margin-bottom: 0px;
+}
+
+#heading .jumbotron p {
+  color:  #777778;
+}
+
+#application .panel {
+  border-color: #777778;
+}
+
+#application .panel-heading{
+  background-color: #9A3016;
+}
+
+#application .panel-title {
+  font-size: 22px;
+  color: white;
+}
+
+#application h3 {
+  font-size: 18px;
+}
+
+#numberInput {
+  height: 33px;
+}
+
+#numberInput:focus {
+  outline: none;
+  border-style: solid;
+  border-color: #9A3016;
+}
+
+.btn {
+  color: white;
+  background-color: #9A3016;
+  border-color: none;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #777778;
+}
+
+body {
+  background-image: url("../img/pingpong.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
